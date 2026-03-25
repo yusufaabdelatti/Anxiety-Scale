@@ -298,6 +298,7 @@ def create_pdf_report(path, client_name, bai_total, bai_responses,
             pass
 
     story.append(Paragraph("Anxiety Assessment Report", title_s))
+    story.append(Spacer(1, 0.5*cm))
     story.append(Paragraph("Beck Anxiety Inventory  ·  Penn State Worry Questionnaire", sub_s))
     story.append(Paragraph(f"CONFIDENTIAL  ·  {date_str}", meta_s))
     story.append(HRFlowable(width="100%", thickness=1, color=BORDER))
