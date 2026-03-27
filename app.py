@@ -802,7 +802,7 @@ else:
 if code.strip() in valid_codes:
                     st.session_state.access_granted = True
                     st.rerun()
-                else:
+            else:
                     st.markdown("""<div style="background:#FFF0F0;border-left:3px solid #D9534F;
                         padding:.8rem 1rem;border-radius:0 4px 4px 0;
                         font-size:.88rem;color:#7A1A1A;margin:.5rem 0;">
