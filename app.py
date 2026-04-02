@@ -358,7 +358,7 @@ def create_pdf_report(path, client_name, bai_total, bai_responses,
     story.append(Paragraph(
         "This report is strictly confidential and intended solely for the treating clinician. "
         "Not to be shared without explicit written consent. "
-        "AI-assisted analysis should be reviewed alongside clinical judgment.", footer_s))
+        "WIJDAN THERAPY", footer_s))
     doc.build(story)
 
 def send_report_email(pdf_path, client_name, bai_total, pswq_total, filename):
